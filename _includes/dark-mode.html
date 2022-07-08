@@ -1,0 +1,10 @@
+<input id="toggle" class="toggle" type="checkbox">
+<div class="background"></div>
+<label for="toggle" class="title">Toggle dark mode</label>
+
+
+<script>
+    const toggle = document.querySelector('.toggle');
+    const hours = new Date().getHours();
+    toggle.checked = hours > 7 && hours < 20;
+</script>
