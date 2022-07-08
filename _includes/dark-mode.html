@@ -1,11 +1,34 @@
 <!-- <button onclick="myFunction()">Toggle dark mode</button> -->
-<img src="assets/images/lightmode.png" width="20px" height="20px" onclick="myFunction()"/>
+<img src="assets/images/lightmode.png" width="20px" height="20px" onclick="myFunction()" id="lightmode"/>
+<img src="assets/images/darkmode.png" width="20px" height="20px" onclick="myFunction()" id="darkmode"/>
 
 <script>
     function myFunction() {
    var element = document.body;
    element.classList.toggle("dark-mode");
+   
 }
+$(document).ready(function(){
+
+         
+
+$("#darkmode").hide();
+
+$("#darkmode").click(function(){
+
+$("#lightmode").hide();
+
+$("#darkmode").show();
+
+
+
+
+
+});
+
+
+
+});
 </script>
 <style>
     body {
