@@ -9,25 +9,20 @@
    
 }
 $(document).ready(function(){
-
-         
-
 $("#darkmode").hide();
-
 $("#darkmode").click(function(){
-
 $("#lightmode").show();
-
 $("#darkmode").hide();
-
-
-
-
-
+});
 });
 
 
-
+$(document).ready(function(){
+$("#lightmode").hide();
+$("#lightmode").click(function(){
+$("#lightmode").hide();
+$("#darkmode").show();
+});
 });
 </script>
 <style>
