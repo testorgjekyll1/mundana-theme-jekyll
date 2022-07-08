@@ -1,10 +1,22 @@
-<input id="toggle" class="toggle" type="checkbox">
-<div class="background"></div>
-<label for="toggle" class="title">Toggle dark mode</label>
+<button onclick="myFunction()">Toggle dark mode</button>
 
 
 <script>
-    const toggle = document.querySelector('.toggle');
-    const hours = new Date().getHours();
-    toggle.checked = hours > 7 && hours < 20;
+    function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
 </script>
+<style>
+    body {
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+</style>
